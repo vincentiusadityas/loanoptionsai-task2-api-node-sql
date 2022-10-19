@@ -17,12 +17,8 @@ const fetchData = async (category, limit) => {
         .then(res => res.json())
         .then(
             (result) => {
-                // console.log("API RESULT:", result)
                 return result
             },
-            // Note: it's important to handle errors here
-            // instead of a catch() block so that we don't swallow
-            // exceptions from actual bugs in components.
             (error) => {
                 console.log('Something went wrong... Please try again.')
             }
